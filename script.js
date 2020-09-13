@@ -23,10 +23,7 @@ function game(event) {
 
   if (board[index]) return window.alert("This cell has already been marked!");
 
-  // update the board
-  board[index] = markers[player];
-  cell.classList.add(markers[player]);
-  numEmptyCells--;
+  // TODO update the board here
 
   updateGameStatus();
   switchPlayer();
