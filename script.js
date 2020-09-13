@@ -34,7 +34,7 @@ function game(event) {
 
 // switches the player value from 0 to 1 and vice versa
 function switchPlayer() {
-  player = player === 0 ? 1 : 0;
+  // TODO Implement me!
 }
 
 // updates gameIsOver to true if a player won the game
@@ -63,11 +63,7 @@ function checkRows() {
 // returns true if all cells in the given row
 // are marked with the same marker, otherwise returns false
 function checkRow(row) {
-  for (let col = 0; col < numCols; col++) {
-    let index = toLinearIndex(row, col);
-    if (board[index] !== markers[player]) return false;
-  }
-  return true;
+  // TODO Implement me!
 }
 
 // return the linear index corresponding to the row and column subscripts
@@ -78,20 +74,13 @@ function toLinearIndex(row, col) {
 // returns true if all cells in a column
 // are marked with the same marker, otherwise returns false
 function checkColumns() {
-  for (let col = 0; col < numCols; col++) {
-    if (checkColumn(col)) return true;
-  }
-  return false;
+  // TODO Implement me!
 }
 
 // returns true if all cells in the given column
 // are marked with the same marker, otherwise returns false
 function checkColumn(col) {
-  for (let row = 0; row < numRows; row++) {
-    let index = toLinearIndex(row, col);
-    if (board[index] !== markers[player]) return false;
-  }
-  return true;
+  // TODO Implement me!
 }
 
 // returns true if all cells in the major or minor diagonal
@@ -103,19 +92,11 @@ function checkDiagonals() {
 // returns true if all cells in the major diagonal
 // are marked with the same marker, otherwise returns false
 function checkMajorDiagonal() {
-  for (let row = 0; row < numRows; row++) {
-    let index = toLinearIndex(row, row);
-    if (board[index] !== markers[player]) return false;
-  }
-  return true;
+  // TODO Implement me!
 }
 
 // returns true if all cells in the minor diagonal
 // are marked with the same marker, otherwise returns false
 function checkMinorDiagonal() {
-  for (let row = 0; row < numRows; row++) {
-    let index = toLinearIndex(row, numCols - row - 1);
-    if (board[index] !== markers[player]) return false;
-  }
-  return true;
+  // TODO Implement me!
 }
